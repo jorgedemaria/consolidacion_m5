@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+ .energia {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.energia-planta {
+    background: rgb(255,255,255);background: radial-gradient(circle, rgba(255,255,255,1) 56%, rgba(250,128,112,1) 100%);
+}
+
+.energia-fuego{
+    background: rgb(255,255,255);background: radial-gradient(circle, rgba(255,255,255,1) 56%, rgba(145,237,145,1) 100%);
+}
+
+.energia-agua{
+    background: rgb(255,255,255);background: radial-gradient(circle, rgba(255,255,255,1) 56%, rgba(135,206,250,1) 100%);
+
+}
+
+.energia:hover {
+    transform: scale(0.95);
+}
+
+.pokemones {
+    gap: 10px;
+}
+
+
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+    max-height: 100%;
+    padding: 5px;
+    border: none;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 56%, rgba(187, 226, 237, 1) 100%);
+    box-shadow: 10px 10px 24px -9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 24px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 24px -9px rgba(0, 0, 0, 0.75);
+    /*animacion*/
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+
+}
+
+
+.pokemon__name {
+    text-align: center;
+    color: white;
+    background-color: #ce4e50;
+    border-radius: 10px;
+    width: 100%
+}
+
+
+
+.pokemon-title {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.pokemon-info {
+    text-align: center;
+    width: 100%; 
+}
+
+.pokemon-info p {
+    font-size: 11px;
+    margin: 3px;
+}
+
+.pokemon-info hr {
+    margin: 3px;
+    color: #d12124;
+}
+
+
+
+
+
+/* animación */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
